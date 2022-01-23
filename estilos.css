@@ -1,0 +1,520 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*INICIO NAV*/
+.navbar-brand img {
+  height: 80px;
+  padding-left: 67px;
+}
+
+.nav-item {
+  width: 80px;
+}
+
+.nav-link {
+  width: 80%;
+}
+
+.dropdown-toggle::after {
+  color: transparent;
+}
+
+.dropdown-menu {
+  min-width: 70px;
+  margin: 0px;
+  padding: 0px;
+  left: -50px;
+}
+
+.dropdown-item {
+  width: 100%;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.bg-color {
+  background-color: white;
+}
+
+/*FIN NAV*/
+.carousel-inner {
+  width: 100%;
+  height: auto;
+}
+.carousel-inner .carousel-item {
+  height: 100%;
+}
+.carousel-inner .carousel-item img {
+  width: 95%;
+  height: auto;
+}
+
+.carousel-indicators {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+#pBarraCarousel {
+  position: relative;
+}
+
+/*SECCION OPCIONES*/
+.seleccion {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 610px;
+  margin-top: 20px;
+  display: flex;
+}
+.seleccion .seleccionDe {
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.seleccion .seleccionDe .seleccionConjuntos {
+  width: 100%;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seleccion .seleccionDe .seleccionConjuntos .conjuntos {
+  width: 90%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./multimedia/conjuntos.jpeg);
+  background-size: cover;
+}
+.seleccion .conjuntos:hover,
+.seleccion .tops:hover,
+.seleccion .calzas:hover,
+.seleccion .shorts:hover {
+  transform: scale(1.06);
+  transition: all 0.7s;
+}
+.seleccion .seleccionIz {
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.seleccion .seleccionIz .seleccionTops {
+  display: flex;
+  align-items: center;
+}
+.seleccion .seleccionIz .seleccionTops .tops {
+  width: 100%;
+  height: 90%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./multimedia/tops.jpeg);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+.seleccion .seleccionIz .seleccionCalzas {
+  display: flex;
+  align-items: center;
+}
+.seleccion .seleccionIz .seleccionCalzas .calzas {
+  width: 100%;
+  height: 90%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./multimedia/producto4.jpeg);
+  background-size: cover;
+}
+.seleccion .seleccionIz .seleccionShorts {
+  display: flex;
+  align-items: center;
+}
+.seleccion .seleccionIz .seleccionShorts .shorts {
+  width: 100%;
+  height: 90%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./multimedia/nuevoproducto2.jpeg);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+}
+.seleccion .tituloSeleccion {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.seleccion .tituloSeleccion a {
+  font-family: "Lora", serif;
+  font-size: 40px;
+  text-decoration: none;
+  color: white;
+}
+.seleccion .tituloSeleccion a:hover {
+  text-decoration: none;
+}
+.seleccion .shopSeleccion {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.seleccion .shopSeleccion a {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 2px;
+  margin-top: 6px;
+}
+.seleccion .shopSeleccion a:hover {
+  text-decoration: none;
+}
+
+.redesSociales {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.redesSociales a {
+  text-decoration: none;
+  text-align: center;
+}
+.redesSociales a .instagramHome {
+  padding-left: 20px;
+}
+.redesSociales a .instagramHome img {
+  width: 25px;
+  height: auto;
+  padding-bottom: 15px;
+}
+.redesSociales a .instagramHome h1 {
+  display: inline-block;
+  font-size: 45px;
+  color: black;
+  font-family: "Merriweather", serif;
+}
+.redesSociales a .instagramHome:hover {
+  transform: scale(1.07);
+  transition: all 0.8s;
+}
+.redesSociales .instagramSeguinos {
+  font-size: 20px;
+  font-family: "Lora", serif;
+}
+
+/* FOOTER */
+footer {
+  grid-area: footer;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-areas: "NavFooter NavFooter" "Datos Datos" "copyRight copyRight";
+}
+footer .navFooter {
+  width: 100%;
+  height: 1.5%;
+  text-align: center;
+  grid-area: NavFooter;
+}
+footer .navFooter a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+}
+footer .navFooter li {
+  display: inline-block;
+  width: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer .datosFooter {
+  grid-area: Datos;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .datosFooter div img {
+  width: 20px;
+  height: auto;
+  padding-bottom: 5px;
+}
+footer .datosFooter div p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Lora", serif;
+  height: 30px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+footer .copyRight {
+  margin-bottom: 2px;
+  margin-top: 10px;
+  font-size: 16px;
+  margin-left: 8px;
+  grid-area: copyRight;
+}
+
+/* media de footer,nav y logo */
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .navbar-brand img {
+    height: 70px;
+  }
+
+  .nav-item {
+    width: 70px;
+  }
+
+  .nav-link {
+    width: 95%;
+  }
+  .nav-link img {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    left: -25px;
+  }
+
+  .dropdown-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  footer {
+    height: auto;
+  }
+  footer .navFooter ul li {
+    width: 25%;
+  }
+  footer .datosFooter {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .navFooter ul li {
+    width: 15%;
+  }
+}
+/* media de HOME */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .seleccion {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 416px) and (max-width: 576px) {
+  .seleccion {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .seleccion .seleccionDe .seleccionConjuntos {
+    height: 300px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .seleccion .seleccionCalzas,
+.seleccion .seleccionShorts,
+.seleccion .seleccionTops {
+    height: 300px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .redesSociales {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .redesSociales a .instagramHome img {
+    width: 15px;
+    height: auto;
+    padding-bottom: 5px;
+  }
+  .redesSociales a .instagramHome h1 {
+    font-size: 20px;
+  }
+  .redesSociales .instagramHome:hover {
+    transform: scale(1.04);
+  }
+  .redesSociales .instagramSeguinos {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 416px) {
+  .seleccion {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .seleccion .seleccionDe .seleccionConjuntos {
+    height: 300px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .seleccion .seleccionCalzas,
+.seleccion .seleccionShorts,
+.seleccion .seleccionTops {
+    height: 300px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .redesSociales {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .redesSociales a .instagramHome img {
+    width: 15px;
+    height: auto;
+    padding-bottom: 5px;
+  }
+  .redesSociales a .instagramHome h1 {
+    font-size: 20px;
+  }
+  .redesSociales .instagramHome:hover {
+    transform: scale(1.04);
+  }
+  .redesSociales .instagramSeguinos {
+    font-size: 18px;
+  }
+}
+/* css titulo secciones */
+.tituloSeccion {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Petit Formal Script", cursiva;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding-top: 0px;
+  margin-left: 400px;
+  margin-right: 400px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1250px) {
+  .tituloSeccion {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  .tituloSeccion {
+    margin-left: 90px;
+    margin-right: 90px;
+  }
+}
+/*INICIO SECCIONES*/
+/* INICIO SECCION REGALA */
+.giftCard {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.gift--card1 {
+  background-color: #e8c2ca;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gift--card1 p {
+  font-family: "Lora", serif;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+}
+.gift--card1 p span {
+  font-size: 25px;
+}
+
+.gift--card2 {
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 400px;
+  height: 300px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gift--card2 p {
+  font-family: "Lora", serif;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+}
+.gift--card2 p span {
+  font-size: 25px;
+}
+
+.gift--card3 {
+  background-color: #E7B7C1;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gift--card3 p {
+  font-family: "Lora", serif;
+  font-size: 40px;
+  text-align: center;
+  line-height: 1;
+}
+.gift--card3 p span {
+  font-size: 25px;
+}
+
+/* INICIO SECCION PRODUCTOS */
+.igProd a {
+  text-decoration: none;
+}
+
+.instagramProductos {
+  grid-area: instagram;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 8px;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #E7B7C1;
+}
+
+/* INICIO SECCION CONTACTO*/
+.formularioContacto {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+div textarea {
+  height: 150px;
+  width: 100%;
+}
+
+.enviar {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.botonEnviar {
+  background-color: #e8c2ca;
+  border: none;
+}
+
+.botonEnviar:hover {
+  color: #e8c2ca;
+  background-color: white;
+  border: 2px solid #e8c2ca;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+$color1:white;
+$colorNav: rgba(0, 0, 0, 0.15);
+$colorMenu:rgba(0, 0, 0, 0.15);
+$colorMenu2:rgba(0, 0, 0, 0.30);
+$color2:#E7B7C1;
+$color3:#e8c2ca;
+$cletra1: black;
+$cletra2: rgba(0, 0, 0, 0.7);
+$cletra3:rgba(52, 58, 64, 0.7);
+$letra: 'Lora',
+serif;
+$letra2:'Merriweather',
+serif;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*INICIO NAV*/
+.navbar-brand img {
+    height: 80px;
+    padding-left: 67px;
+}
+
+.nav-item {
+    width: 80px;
+}
+
+.nav-link {
+    width: 80%;
+}
+
+.dropdown-toggle::after {
+    color: transparent;
+}
+
+.dropdown-menu {
+    min-width: 70px;
+    margin: 0px;
+    padding: 0px;
+    left: -50px;
+
+}
+
+.dropdown-item {
+    width: 100%;
+    text-align: center;
+    border: 1px solid $colorMenu;
+}
+
+.dropdown-item:hover {
+    background-color: $colorMenu;
+}
+
+.bg-color {
+    background-color: $color1;
+}
+
+/*FIN NAV*/
+.carousel-inner {
+    width: 100%;
+    height: auto;
+
+    .carousel-item {
+        height: 100%;
+
+        img {
+            width: 95%;
+            height: auto;
+        }
+    }
+
+}
+
+.carousel-indicators {
+    background-color: $colorNav;
+}
+
+#pBarraCarousel {
+    position: relative;
+}
+
+/*SECCION OPCIONES*/
+
+.seleccion {
+    background-color: $colorMenu2;
+    height: 610px;
+    margin-top: 20px;
+    display: flex;
+
+    .seleccionDe {
+        height: auto;
+        display: flex;
+        align-items: center;
+
+        .seleccionConjuntos {
+            width: 100%;
+            height: 95%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .conjuntos {
+                width: 90%;
+                height: 100%;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./multimedia/conjuntos.jpeg);
+                background-size: cover;
+            }
+
+        }
+
+    }
+
+    .conjuntos:hover,
+    .tops:hover,
+    .calzas:hover,
+    .shorts:hover {
+        transform: scale(1.06);
+        transition: all 0.7s;
+    }
+
+    .seleccionIz {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+
+        .seleccionTops {
+            display: flex;
+            align-items: center;
+
+            .tops {
+                width: 100%;
+                height: 90%;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./multimedia/tops.jpeg);
+                background-size: cover;
+                background-position-y: center;
+                background-position-x: center;
+
+            }
+        }
+
+        .seleccionCalzas {
+            display: flex;
+            align-items: center;
+
+            .calzas {
+                width: 100%;
+                height: 90%;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./multimedia/producto4.jpeg);
+                background-size: cover;
+
+            }
+        }
+
+        .seleccionShorts {
+            display: flex;
+            align-items: center;
+
+            .shorts {
+                width: 100%;
+                height: 90%;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./multimedia/nuevoproducto2.jpeg);
+                background-size: cover;
+                background-position-y: center;
+                background-position-x: center;
+
+            }
+        }
+
+
+    }
+
+    .tituloSeleccion {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        a {
+            font-family: $letra;
+            font-size: 40px;
+            text-decoration: none;
+            color: $color1;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+    .shopSeleccion {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        a {
+            font-family: $letra;
+            font-size: 16px;
+            text-decoration: none;
+            color: $color1;
+            border: 1px solid $color1;
+            padding: 2px;
+            margin-top: 6px;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+}
+
+.redesSociales {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    a {
+        text-decoration: none;
+        text-align: center;
+
+        .instagramHome {
+            padding-left: 20px;
+
+            img {
+                width: 25px;
+                height: auto;
+                padding-bottom: 15px;
+            }
+
+            h1 {
+                display: inline-block;
+                font-size: 45px;
+                color: $cletra1;
+                font-family: $letra2;
+            }
+        }
+
+
+        .instagramHome:hover {
+            transform: scale(1.07);
+            transition: all 0.8s;
+        }
+    }
+
+    .instagramSeguinos {
+        font-size: 20px;
+        font-family: 'Lora', serif;
+    }
+
+}
+
+/* FOOTER */
+footer {
+    grid-area: footer;
+    width: 100%;
+    height: 200px;
+    background-color: $colorNav;
+    display: grid;
+    grid-template-areas:
+        "NavFooter NavFooter"
+        "Datos Datos"
+        "copyRight copyRight";
+
+    .navFooter {
+        width: 100%;
+        height: 1.5%;
+        text-align: center;
+        grid-area: NavFooter;
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: $cletra1;
+        }
+
+        li {
+            display: inline-block;
+            width: 10%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .datosFooter {
+        grid-area: Datos;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            img {
+                width: 20px;
+                height: auto;
+                padding-bottom: 5px;
+            }
+
+            p {
+                text-align: center;
+                font-size: 18px;
+                font-family: $letra;
+                height: 30px;
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+
+        }
+
+
+    }
+
+
+    .copyRight {
+        margin-bottom: 2px;
+        margin-top: 10px;
+        font-size: 16px;
+        margin-left: 8px;
+        grid-area: copyRight;
+    }
+}
+
+
+/* media de footer,nav y logo */
+@media only screen and (min-width:300px) and (max-width: 500px) {
+    .navbar-brand img {
+        height: 70px;
+    }
+    .nav-item{
+        width: 70px;
+    }
+    .nav-link{
+        width:95%;
+        img{
+            width: 100%;
+        }
+        
+    }
+    .dropdown-menu{
+        left: -25px;
+    }
+    .dropdown-item{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    footer {
+        height: auto;
+
+        .navFooter ul li {
+            width: 25%;
+        }
+        .datosFooter{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+@media only screen and (min-width:500px) and (max-width: 800px) {
+
+    .navFooter ul li {
+        width: 15%;
+    }
+}
+
+/* media de HOME */
+
+@media only screen and (min-width:576px) and (max-width: 768px) {
+    .seleccion {
+        flex-wrap: wrap;
+
+    }
+}
+@media only screen and (min-width:416px) and (max-width: 576px) {
+    .seleccion {
+        flex-wrap: wrap;
+        height: auto;
+
+        .seleccionDe .seleccionConjuntos {
+            height: 300px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .seleccionCalzas,
+        .seleccionShorts,
+        .seleccionTops {
+            height: 300px;
+            padding-left: 18px;
+            padding-right: 18px;
+        }
+
+    }
+
+    .redesSociales {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        a .instagramHome {
+
+            img {
+                width: 15px;
+                height: auto;
+                padding-bottom: 5px;
+            }
+
+            h1 {
+                font-size: 20px;
+
+            }
+        }
+
+
+        .instagramHome:hover {
+            transform: scale(1.04);
+        }
+
+        .instagramSeguinos {
+            font-size: 18px;
+        }
+
+    }
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 416px) {
+    .seleccion {
+        flex-wrap: wrap;
+        height: auto;
+
+        .seleccionDe .seleccionConjuntos {
+            height: 300px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .seleccionCalzas,
+        .seleccionShorts,
+        .seleccionTops {
+            height: 300px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+    }
+
+    .redesSociales {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        a .instagramHome {
+
+            img {
+                width: 15px;
+                height: auto;
+                padding-bottom: 5px;
+            }
+
+            h1 {
+                font-size: 20px;
+
+            }
+        }
+
+
+        .instagramHome:hover {
+            transform: scale(1.04);
+        }
+
+        .instagramSeguinos {
+            font-size: 18px;
+        }
+
+    }
+}
+
+
+
+/* css titulo secciones */
+
+.tituloSeccion {
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Petit Formal Script', cursiva;
+    font-style: italic;
+    background-color: $colorNav;
+    padding-top: 0px;
+    margin-left: 400px;
+    margin-right: 400px;
+    color: $cletra2;
+
+}
+
+@media only screen and (min-width:700px) and (max-width: 1250px) {
+    .tituloSeccion {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width: 700px) {
+    .tituloSeccion {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
+
+
+
+/*INICIO SECCIONES*/
+
+/* INICIO SECCION REGALA */
+@import "_giftcard";
+/* INICIO SECCION PRODUCTOS */
+@import "_productos";
+/* INICIO SECCION CONTACTO*/
+@import "_contacto";
